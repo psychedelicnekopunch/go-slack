@@ -1,0 +1,16 @@
+
+package infrastructure
+
+
+type Config struct {
+	Slack struct {
+		Token string
+	}
+}
+
+
+func NewConfig() *Config {
+	c := new(Config)
+	c.Slack.Token = "YOUR SLACK BOTs TOKEN"
+	return c
+}
